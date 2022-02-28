@@ -12,7 +12,7 @@ function onLoad() {
 	ctx = canvas.getContext('2d');
 
 	paint();
-	setInterval(paint, 2400);
+	setInterval(paint, 800);
 }
 
 function paint() {
@@ -44,7 +44,7 @@ function paint() {
 		ctx.fillRect(0, y, canvas.width, stripeWidth);
 		y += stripeSpacing;
 	}
-	stripeSpacing += 1;
+	stripeSpacing += 0.4;
 	const colorTmp = color1;
 	color1 = color2;
 	color2 = colorTmp;
